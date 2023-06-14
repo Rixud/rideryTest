@@ -2,7 +2,7 @@
 //  RideryTestApp.swift
 //  RideryTest
 //
-//  Created by ubiipagos on 14/6/23.
+//  Created by Luis Guerra on 14/6/23.
 //
 
 import SwiftUI

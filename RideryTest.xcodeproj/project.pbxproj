@@ -11,6 +11,18 @@
 		03C00CC82A39B24B008AADF6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C00CC72A39B24B008AADF6 /* ContentView.swift */; };
 		03C00CCA2A39B24C008AADF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03C00CC92A39B24C008AADF6 /* Assets.xcassets */; };
 		03C00CCD2A39B24C008AADF6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03C00CCC2A39B24C008AADF6 /* Preview Assets.xcassets */; };
+		03C00CD72A39B699008AADF6 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C00CD62A39B699008AADF6 /* UserModel.swift */; };
+		03C00CDB2A39B880008AADF6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C00CDA2A39B880008AADF6 /* HomeView.swift */; };
+		03C00CDD2A39B923008AADF6 /* SaveData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C00CDC2A39B923008AADF6 /* SaveData.swift */; };
+		03C00CDF2A39BA84008AADF6 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C00CDE2A39BA84008AADF6 /* Constant.swift */; };
+		03C00CE12A39C39B008AADF6 /* LogInService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C00CE02A39C39B008AADF6 /* LogInService.swift */; };
+		03C00CE32A39D16E008AADF6 /* TFManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C00CE22A39D16E008AADF6 /* TFManager.swift */; };
+		03C00CE62A39E8C1008AADF6 /* rideryTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C00CE52A39E8C1008AADF6 /* rideryTextField.swift */; };
+		03C00CE82A39FBD4008AADF6 /* rideryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C00CE72A39FBD4008AADF6 /* rideryButton.swift */; };
+		03C00CEA2A3A1B25008AADF6 /* RideryLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C00CE92A3A1B25008AADF6 /* RideryLocationViewModel.swift */; };
+		03C00CEC2A3A243A008AADF6 /* RideryDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C00CEB2A3A243A008AADF6 /* RideryDrawer.swift */; };
+		03C00CEE2A3A4DCF008AADF6 /* RideryRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C00CED2A3A4DCF008AADF6 /* RideryRefreshControl.swift */; };
+		03C00CF02A3A5938008AADF6 /* EditProfileSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C00CEF2A3A5938008AADF6 /* EditProfileSwift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +31,18 @@
 		03C00CC72A39B24B008AADF6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		03C00CC92A39B24C008AADF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03C00CCC2A39B24C008AADF6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		03C00CD62A39B699008AADF6 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		03C00CDA2A39B880008AADF6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		03C00CDC2A39B923008AADF6 /* SaveData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveData.swift; sourceTree = "<group>"; };
+		03C00CDE2A39BA84008AADF6 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		03C00CE02A39C39B008AADF6 /* LogInService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInService.swift; sourceTree = "<group>"; };
+		03C00CE22A39D16E008AADF6 /* TFManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFManager.swift; sourceTree = "<group>"; };
+		03C00CE52A39E8C1008AADF6 /* rideryTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rideryTextField.swift; sourceTree = "<group>"; };
+		03C00CE72A39FBD4008AADF6 /* rideryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rideryButton.swift; sourceTree = "<group>"; };
+		03C00CE92A3A1B25008AADF6 /* RideryLocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideryLocationViewModel.swift; sourceTree = "<group>"; };
+		03C00CEB2A3A243A008AADF6 /* RideryDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideryDrawer.swift; sourceTree = "<group>"; };
+		03C00CED2A3A4DCF008AADF6 /* RideryRefreshControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideryRefreshControl.swift; sourceTree = "<group>"; };
+		03C00CEF2A3A5938008AADF6 /* EditProfileSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileSwift.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +75,14 @@
 		03C00CC42A39B24B008AADF6 /* RideryTest */ = {
 			isa = PBXGroup;
 			children = (
+				03C00CE42A39E8A4008AADF6 /* ReusableViews */,
+				03C00CD52A39B63E008AADF6 /* Model */,
+				03C00CD42A39B630008AADF6 /* ViewModels */,
+				03C00CD32A39B62A008AADF6 /* Views */,
 				03C00CC52A39B24B008AADF6 /* RideryTestApp.swift */,
-				03C00CC72A39B24B008AADF6 /* ContentView.swift */,
 				03C00CC92A39B24C008AADF6 /* Assets.xcassets */,
 				03C00CCB2A39B24C008AADF6 /* Preview Content */,
+				03C00CDE2A39BA84008AADF6 /* Constant.swift */,
 			);
 			path = RideryTest;
 			sourceTree = "<group>";
@@ -65,6 +93,46 @@
 				03C00CCC2A39B24C008AADF6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		03C00CD32A39B62A008AADF6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				03C00CC72A39B24B008AADF6 /* ContentView.swift */,
+				03C00CDA2A39B880008AADF6 /* HomeView.swift */,
+				03C00CEF2A3A5938008AADF6 /* EditProfileSwift.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		03C00CD42A39B630008AADF6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				03C00CDC2A39B923008AADF6 /* SaveData.swift */,
+				03C00CE02A39C39B008AADF6 /* LogInService.swift */,
+				03C00CE92A3A1B25008AADF6 /* RideryLocationViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		03C00CD52A39B63E008AADF6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				03C00CD62A39B699008AADF6 /* UserModel.swift */,
+				03C00CE22A39D16E008AADF6 /* TFManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		03C00CE42A39E8A4008AADF6 /* ReusableViews */ = {
+			isa = PBXGroup;
+			children = (
+				03C00CE52A39E8C1008AADF6 /* rideryTextField.swift */,
+				03C00CE72A39FBD4008AADF6 /* rideryButton.swift */,
+				03C00CEB2A3A243A008AADF6 /* RideryDrawer.swift */,
+				03C00CED2A3A4DCF008AADF6 /* RideryRefreshControl.swift */,
+			);
+			path = ReusableViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +205,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03C00CE12A39C39B008AADF6 /* LogInService.swift in Sources */,
+				03C00CEA2A3A1B25008AADF6 /* RideryLocationViewModel.swift in Sources */,
 				03C00CC82A39B24B008AADF6 /* ContentView.swift in Sources */,
+				03C00CDB2A39B880008AADF6 /* HomeView.swift in Sources */,
+				03C00CD72A39B699008AADF6 /* UserModel.swift in Sources */,
 				03C00CC62A39B24B008AADF6 /* RideryTestApp.swift in Sources */,
+				03C00CEE2A3A4DCF008AADF6 /* RideryRefreshControl.swift in Sources */,
+				03C00CF02A3A5938008AADF6 /* EditProfileSwift.swift in Sources */,
+				03C00CDD2A39B923008AADF6 /* SaveData.swift in Sources */,
+				03C00CE82A39FBD4008AADF6 /* rideryButton.swift in Sources */,
+				03C00CDF2A39BA84008AADF6 /* Constant.swift in Sources */,
+				03C00CEC2A3A243A008AADF6 /* RideryDrawer.swift in Sources */,
+				03C00CE62A39E8C1008AADF6 /* rideryTextField.swift in Sources */,
+				03C00CE32A39D16E008AADF6 /* TFManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
