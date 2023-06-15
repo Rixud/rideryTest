@@ -1,16 +1,17 @@
 //
-//  HomeView.swift
+//  HomeWithGoogle.swift
 //  RideryTest
 //
-//  Created by Luis Guerra on 14/6/23.
+//  Created by Luis Guerra on 15/6/23.
 //
 
 import SwiftUI
+import GoogleMaps
 import MapKit
 
-struct HomeView: View {
-    @State var isEditActive = false
+struct HomeWithGoogle: View {
     @State var locationHandler = RideryLocationViewModel.getInstance()
+    @State var isEditActive = false
     @Binding var isActive:Bool
     @State var isOpen = false
     @State var isRefreshing = false
@@ -49,6 +50,8 @@ struct HomeView: View {
                 DrawerView(isOpen: $isOpen, isActive: $isActive, isEditActive: $isEditActive)
                 
             }
+            
+            
             
             
         }.navigationBarHidden(true)
@@ -122,50 +125,3 @@ struct HomeView: View {
     }
 }
 
-struct DrawerView: View {
-    
-    @Binding var isOpen:Bool
-    @Binding var isActive:Bool
-    @Binding var isEditActive:Bool
-    
-    var body: some View {
-        Constant.backGroundDrawerColor.ignoresSafeArea()
-        VStack {
-            HStack{
-                Spacer()
-                drawerRideryButton(tittle: "X", action: closeDrawer)
-                    .frame(width: 20, height: 20, alignment: .topTrailing)
-                    
-            }
-            Spacer(minLength: 5)
-            rideryButton(tittle: "Editar Perfil", action: editProfile)
-                .padding(EdgeInsets(top: 0, leading: 5, bottom: 5, trailing: 5))
-            rideryButton(tittle: "Cerrar Sesion", action: logOut)
-                .padding(EdgeInsets(top: 0, leading: 5, bottom: 5, trailing: 5))
-        }
-        
-        //Destinos de navegación
-        NavigationLink(
-            destination: EditProfileSwift(isEditActive: self.$isEditActive),
-            isActive: $isEditActive,
-            label: { EmptyView()
-            })
-    }
-    
-    func closeDrawer(){
-        withAnimation {
-            isOpen.toggle()
-        }
-    }
-    func editProfile(){
-        withAnimation {
-            isEditActive.toggle()
-        }
-    }
-    func logOut(){
-        withAnimation {
-            isActive.toggle()
-        }
-    }
-    
-}

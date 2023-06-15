@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct EditProfileSwift: View {
-    
+    @Binding var isEditActive:Bool
     @StateObject var emailString = TFManager()
     @StateObject var phoneNumberString = TFManager()
     var body: some View {
@@ -23,15 +23,20 @@ struct EditProfileSwift: View {
                 rideryTextField(placeholder: "ejemplo@gmail com", tittle: "Correo electrónico", textInputString: emailString)
            
                 rideryTextField(placeholder: "0414 000 00 00", tittle: "Numero de teléfono", textInputString: phoneNumberString)
+                
                 Spacer(minLength: 20)
                 
             }.padding(20)
+        }.onAppear {
+            let userdata = UserViewModel().getTestUser()
+            emailString.text = userdata.email
+            phoneNumberString.text = userdata.phoneNumber
         }
     }
 }
 
 struct EditProfileSwift_Previews: PreviewProvider {
     static var previews: some View {
-        EditProfileSwift()
+        EditProfileSwift(isEditActive: .constant(true))
     }
 }

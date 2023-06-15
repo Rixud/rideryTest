@@ -12,6 +12,13 @@ class UserModel:Codable {
     var userName:String
     var email:String
     var phoneNumber:String
-    var profilePictureURL:URL
+    var profilePictureURL:URL?
+    
+    init(userName: String, email: String, phoneNumber: String, profilePictureURL: URL?) {
+        self.userName = userName
+        self.email = email
+        self.phoneNumber = phoneNumber
+        self.profilePictureURL = profilePictureURL
+    }
         
 }

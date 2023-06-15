@@ -16,4 +16,13 @@ class TFManager: ObservableObject {
             }
         }
     }
+    init() {
+        self.maxDigit = 15
+        self.text = ""
+    }
+    
+    init(text:String) {
+        self.maxDigit = 15
+        self.text = text
+    }
 }
