@@ -34,7 +34,6 @@ struct HomeView: View {
                 }.gesture(DragGesture(minimumDistance: 0, coordinateSpace: .local)
                     .onEnded({value in
                         if value.translation.height > 0.0 {
-                            print("Down \(value.translation.height)")
                             isRefreshing = true
                             run(after: 2) {
                                 randomColor = updateMap(locationHandler)
@@ -68,7 +67,6 @@ struct HomeView: View {
         //Code to updateMap info
         //TestRandom
         isRefreshing = false
-        print("Refresh")
         //location.getRandomTestMapLocations()
         return Color.random()
         

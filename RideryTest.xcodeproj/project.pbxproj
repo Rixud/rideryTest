@@ -25,9 +25,11 @@
 		03C00CF02A3A5938008AADF6 /* EditProfileSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C00CEF2A3A5938008AADF6 /* EditProfileSwift.swift */; };
 		03F1E58E2A3B506A003F4D18 /* CGFloat+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F1E58D2A3B506A003F4D18 /* CGFloat+Extension.swift */; };
 		03F1E5902A3B50DC003F4D18 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F1E58F2A3B50DC003F4D18 /* Color+Extension.swift */; };
+		0ECE15AAF4326CBE655724E8 /* Pods_RideryTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 658A825661545A85B84614EB /* Pods_RideryTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01E87EB021B70BBC1516516E /* Pods-RideryTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RideryTest.release.xcconfig"; path = "Target Support Files/Pods-RideryTest/Pods-RideryTest.release.xcconfig"; sourceTree = "<group>"; };
 		03C00CC22A39B24B008AADF6 /* RideryTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RideryTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03C00CC52A39B24B008AADF6 /* RideryTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideryTestApp.swift; sourceTree = "<group>"; };
 		03C00CC72A39B24B008AADF6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		03C00CEF2A3A5938008AADF6 /* EditProfileSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileSwift.swift; sourceTree = "<group>"; };
 		03F1E58D2A3B506A003F4D18 /* CGFloat+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extension.swift"; sourceTree = "<group>"; };
 		03F1E58F2A3B50DC003F4D18 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		658A825661545A85B84614EB /* Pods_RideryTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RideryTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73A0C0296B2A715A141972C8 /* Pods-RideryTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RideryTest.debug.xcconfig"; path = "Target Support Files/Pods-RideryTest/Pods-RideryTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0ECE15AAF4326CBE655724E8 /* Pods_RideryTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,8 @@
 			children = (
 				03C00CC42A39B24B008AADF6 /* RideryTest */,
 				03C00CC32A39B24B008AADF6 /* Products */,
+				B07CCDD6ED483C9C57E4CE3A /* Pods */,
+				D4FD87590220672E4FF7C555 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -149,6 +156,24 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		B07CCDD6ED483C9C57E4CE3A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				73A0C0296B2A715A141972C8 /* Pods-RideryTest.debug.xcconfig */,
+				01E87EB021B70BBC1516516E /* Pods-RideryTest.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D4FD87590220672E4FF7C555 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				658A825661545A85B84614EB /* Pods_RideryTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -156,9 +181,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03C00CD02A39B24C008AADF6 /* Build configuration list for PBXNativeTarget "RideryTest" */;
 			buildPhases = (
+				9E3EB9470A850719DA8F2722 /* [CP] Check Pods Manifest.lock */,
 				03C00CBE2A39B24B008AADF6 /* Sources */,
 				03C00CBF2A39B24B008AADF6 /* Frameworks */,
 				03C00CC02A39B24B008AADF6 /* Resources */,
+				7EA4933AB5C267BACF08ADBC /* [CP] Embed Pods Frameworks */,
+				215A4FDB7E998A1BA9F7D587 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,6 +241,65 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		215A4FDB7E998A1BA9F7D587 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RideryTest/Pods-RideryTest-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RideryTest/Pods-RideryTest-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RideryTest/Pods-RideryTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7EA4933AB5C267BACF08ADBC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RideryTest/Pods-RideryTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RideryTest/Pods-RideryTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RideryTest/Pods-RideryTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E3EB9470A850719DA8F2722 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RideryTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		03C00CBE2A39B24B008AADF6 /* Sources */ = {
@@ -357,6 +444,7 @@
 		};
 		03C00CD12A39B24C008AADF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73A0C0296B2A715A141972C8 /* Pods-RideryTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -385,6 +473,7 @@
 		};
 		03C00CD22A39B24C008AADF6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01E87EB021B70BBC1516516E /* Pods-RideryTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
