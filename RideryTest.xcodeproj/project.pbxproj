@@ -23,6 +23,8 @@
 		03C00CEC2A3A243A008AADF6 /* RideryDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C00CEB2A3A243A008AADF6 /* RideryDrawer.swift */; };
 		03C00CEE2A3A4DCF008AADF6 /* RideryRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C00CED2A3A4DCF008AADF6 /* RideryRefreshControl.swift */; };
 		03C00CF02A3A5938008AADF6 /* EditProfileSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C00CEF2A3A5938008AADF6 /* EditProfileSwift.swift */; };
+		03F1E58E2A3B506A003F4D18 /* CGFloat+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F1E58D2A3B506A003F4D18 /* CGFloat+Extension.swift */; };
+		03F1E5902A3B50DC003F4D18 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F1E58F2A3B50DC003F4D18 /* Color+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,8 @@
 		03C00CEB2A3A243A008AADF6 /* RideryDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideryDrawer.swift; sourceTree = "<group>"; };
 		03C00CED2A3A4DCF008AADF6 /* RideryRefreshControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideryRefreshControl.swift; sourceTree = "<group>"; };
 		03C00CEF2A3A5938008AADF6 /* EditProfileSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileSwift.swift; sourceTree = "<group>"; };
+		03F1E58D2A3B506A003F4D18 /* CGFloat+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extension.swift"; sourceTree = "<group>"; };
+		03F1E58F2A3B50DC003F4D18 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,7 @@
 		03C00CC42A39B24B008AADF6 /* RideryTest */ = {
 			isa = PBXGroup;
 			children = (
+				03F1E58C2A3B5054003F4D18 /* Extensions */,
 				03C00CE42A39E8A4008AADF6 /* ReusableViews */,
 				03C00CD52A39B63E008AADF6 /* Model */,
 				03C00CD42A39B630008AADF6 /* ViewModels */,
@@ -133,6 +138,15 @@
 				03C00CED2A3A4DCF008AADF6 /* RideryRefreshControl.swift */,
 			);
 			path = ReusableViews;
+			sourceTree = "<group>";
+		};
+		03F1E58C2A3B5054003F4D18 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				03F1E58D2A3B506A003F4D18 /* CGFloat+Extension.swift */,
+				03F1E58F2A3B50DC003F4D18 /* Color+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +226,7 @@
 				03C00CD72A39B699008AADF6 /* UserModel.swift in Sources */,
 				03C00CC62A39B24B008AADF6 /* RideryTestApp.swift in Sources */,
 				03C00CEE2A3A4DCF008AADF6 /* RideryRefreshControl.swift in Sources */,
+				03F1E5902A3B50DC003F4D18 /* Color+Extension.swift in Sources */,
 				03C00CF02A3A5938008AADF6 /* EditProfileSwift.swift in Sources */,
 				03C00CDD2A39B923008AADF6 /* SaveData.swift in Sources */,
 				03C00CE82A39FBD4008AADF6 /* rideryButton.swift in Sources */,
@@ -219,6 +234,7 @@
 				03C00CEC2A3A243A008AADF6 /* RideryDrawer.swift in Sources */,
 				03C00CE62A39E8C1008AADF6 /* rideryTextField.swift in Sources */,
 				03C00CE32A39D16E008AADF6 /* TFManager.swift in Sources */,
+				03F1E58E2A3B506A003F4D18 /* CGFloat+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

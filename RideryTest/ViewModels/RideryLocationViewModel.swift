@@ -7,6 +7,7 @@
 
 import Foundation
 import CoreLocation
+import MapKit
 
 struct ImportanLocation: Identifiable {
     let id = UUID()
@@ -52,6 +53,33 @@ class RideryLocationViewModel:NSObject {
     
     func StopRequest(){
         locationManager.stopUpdatingLocation()
+    }
+    
+    func getRandomTestMapLocations()->[ImportanLocation]{
+        return  [
+            ImportanLocation(name: "Ridery Home", coordinate: CLLocationCoordinate2D(latitude: 10.50439, longitude: -66.88376)),
+            ImportanLocation(name: "Random1", coordinate: CLLocationCoordinate2D(latitude: 10.50439, longitude: -66.87666)),
+            ImportanLocation(name: "Random2 ", coordinate: CLLocationCoordinate2D(latitude: 10.49039, longitude: -66.88376))
+        ]
+
+    }
+    
+    
+    func run(after wait: TimeInterval, closure: @escaping () -> Void) {
+        let queue = DispatchQueue.main
+        queue.asyncAfter(deadline: DispatchTime.now() + wait, execute: closure)
+    }
+    
+    
+    func getCentralMapRegion () -> MKCoordinateRegion {
+        return MKCoordinateRegion(
+            center: CLLocationCoordinate2D(
+                latitude: 10.50439,
+                longitude: -66.88376),
+            span: MKCoordinateSpan(
+                latitudeDelta: 0.03,
+                longitudeDelta: 0.03)
+        )
     }
 }
 
