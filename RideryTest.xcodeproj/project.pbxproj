@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		03C00CC62A39B24B008AADF6 /* RideryTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C00CC52A39B24B008AADF6 /* RideryTestApp.swift */; };
-		03C00CC82A39B24B008AADF6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C00CC72A39B24B008AADF6 /* ContentView.swift */; };
 		03C00CCA2A39B24C008AADF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03C00CC92A39B24C008AADF6 /* Assets.xcassets */; };
 		03C00CCD2A39B24C008AADF6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03C00CCC2A39B24C008AADF6 /* Preview Assets.xcassets */; };
 		03C00CD72A39B699008AADF6 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C00CD62A39B699008AADF6 /* UserModel.swift */; };
@@ -25,6 +24,8 @@
 		03C00CF02A3A5938008AADF6 /* EditProfileSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C00CEF2A3A5938008AADF6 /* EditProfileSwift.swift */; };
 		03F1E58E2A3B506A003F4D18 /* CGFloat+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F1E58D2A3B506A003F4D18 /* CGFloat+Extension.swift */; };
 		03F1E5902A3B50DC003F4D18 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F1E58F2A3B50DC003F4D18 /* Color+Extension.swift */; };
+		03F1E5922A3B6289003F4D18 /* SQLiteRideryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F1E5912A3B6289003F4D18 /* SQLiteRideryViewModel.swift */; };
+		03F1E5932A3B7C9A003F4D18 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C00CC72A39B24B008AADF6 /* ContentView.swift */; };
 		0ECE15AAF4326CBE655724E8 /* Pods_RideryTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 658A825661545A85B84614EB /* Pods_RideryTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		03C00CEF2A3A5938008AADF6 /* EditProfileSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileSwift.swift; sourceTree = "<group>"; };
 		03F1E58D2A3B506A003F4D18 /* CGFloat+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extension.swift"; sourceTree = "<group>"; };
 		03F1E58F2A3B50DC003F4D18 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		03F1E5912A3B6289003F4D18 /* SQLiteRideryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteRideryViewModel.swift; sourceTree = "<group>"; };
 		658A825661545A85B84614EB /* Pods_RideryTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RideryTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73A0C0296B2A715A141972C8 /* Pods-RideryTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RideryTest.debug.xcconfig"; path = "Target Support Files/Pods-RideryTest/Pods-RideryTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,6 +125,7 @@
 				03C00CDC2A39B923008AADF6 /* SaveData.swift */,
 				03C00CE02A39C39B008AADF6 /* LogInService.swift */,
 				03C00CE92A3A1B25008AADF6 /* RideryLocationViewModel.swift */,
+				03F1E5912A3B6289003F4D18 /* SQLiteRideryViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -162,7 +165,6 @@
 				73A0C0296B2A715A141972C8 /* Pods-RideryTest.debug.xcconfig */,
 				01E87EB021B70BBC1516516E /* Pods-RideryTest.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -308,12 +310,12 @@
 			files = (
 				03C00CE12A39C39B008AADF6 /* LogInService.swift in Sources */,
 				03C00CEA2A3A1B25008AADF6 /* RideryLocationViewModel.swift in Sources */,
-				03C00CC82A39B24B008AADF6 /* ContentView.swift in Sources */,
 				03C00CDB2A39B880008AADF6 /* HomeView.swift in Sources */,
 				03C00CD72A39B699008AADF6 /* UserModel.swift in Sources */,
 				03C00CC62A39B24B008AADF6 /* RideryTestApp.swift in Sources */,
 				03C00CEE2A3A4DCF008AADF6 /* RideryRefreshControl.swift in Sources */,
 				03F1E5902A3B50DC003F4D18 /* Color+Extension.swift in Sources */,
+				03F1E5932A3B7C9A003F4D18 /* ContentView.swift in Sources */,
 				03C00CF02A3A5938008AADF6 /* EditProfileSwift.swift in Sources */,
 				03C00CDD2A39B923008AADF6 /* SaveData.swift in Sources */,
 				03C00CE82A39FBD4008AADF6 /* rideryButton.swift in Sources */,
@@ -322,6 +324,7 @@
 				03C00CE62A39E8C1008AADF6 /* rideryTextField.swift in Sources */,
 				03C00CE32A39D16E008AADF6 /* TFManager.swift in Sources */,
 				03F1E58E2A3B506A003F4D18 /* CGFloat+Extension.swift in Sources */,
+				03F1E5922A3B6289003F4D18 /* SQLiteRideryViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

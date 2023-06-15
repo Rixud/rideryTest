@@ -83,7 +83,7 @@ struct LogInAndRegisterView:View {
                 LogInView()
                 //RegistroView()
             }else{
-                RegisterView()
+                RegisterView(isLogIn: $isLogIn)
             }
             
         }
@@ -167,6 +167,11 @@ struct RegisterView: View {
     @StateObject var passwordString = TFManager()
     @StateObject var passwordConfirmString = TFManager()
     @StateObject var phoneNumberString = TFManager()
+    @Binding var isLogIn: Bool
+    
+    @State var alertTitle:String = ""
+    @State var alertMsg:String = ""
+    @State var isPresentingAlert:Bool = false
     
     
     var body: some View {
@@ -207,6 +212,11 @@ struct RegisterView: View {
                     
                 
             }.padding(.bottom, 18)
+                .alert(alertTitle, isPresented: $isPresentingAlert){
+                    Button("Ok", role: .cancel){
+                        isLogIn.toggle()
+                    }
+                }
             
           
             
@@ -262,17 +272,24 @@ struct RegisterView: View {
     }
     
     func registrarse()  {
-        
-        print("Me registro con el correo \(emailString.text), la contraseña \(passwordString.text) y confirmación de contraseña \(passwordConfirmString.text), numero de telefono \(phoneNumberString)")
+        let SQLManager = SQLiteRideryViewModel()
+        //print("Me registro con el correo \(emailString.text), la contraseña \(passwordString.text) y confirmación de contraseña \(passwordConfirmString.text), numero de telefono \(phoneNumberString)")
     
         //validación contraseña
         if passwordString.text == passwordConfirmString.text{
-          
-            let objetoActualizadorDatos = SaveData()
+            SQLManager.createTable()
+            let newID = SQLManager.addUser(phone: phoneNumberString.text, mail: emailString.text)
             
-            let resultado = objetoActualizadorDatos.guardarDatos(correo: emailString.text, contrasena: passwordString.text, nombre: "")
+            SQLManager.checkDatabase()
+            if newID != nil {
+                alertTitle = "Cuenta Creada"
+                clearTextField()
+            }
+            //let objetoActualizadorDatos = SaveData()
             
-            print("Se guardaron los datos con exito?: \(resultado)")
+            //let resultado = objetoActualizadorDatos.guardarDatos(correo: emailString.text, contrasena: passwordString.text, nombre: "")
+            
+            //print("Se guardaron los datos con exito?: \(resultado)")
             
         }else{
             
@@ -281,6 +298,14 @@ struct RegisterView: View {
         
         
         
+    }
+    
+    func clearTextField () {
+        emailString.text = ""
+        passwordString.text = ""
+        passwordConfirmString.text = ""
+        phoneNumberString.text = ""
+        isPresentingAlert.toggle()
     }
     
 }
